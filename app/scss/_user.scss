@@ -3,8 +3,15 @@
     background: rgba(255, 254, 254, 0.5);
     padding-top: 20px;
     padding-bottom: 20px;
+    @include breakpoints-down(small){
+        flex-direction: column;
+    }
     .nav{
         flex: 0.25;
+        @include breakpoints-down(small){
+           width: 100%;
+           text-align: center;
+        }
         h4{
             margin-bottom: 20px;
             color: red;
@@ -29,15 +36,19 @@
                 a{
                     margin-left: 20px;
                     color: rgb(65, 65, 65);
-                    @include breakpoints-down(small){
-                        display: none;
-                    }
+                    // @include breakpoints-down(small){
+                    //     display: none;
+                    // }
                 }
             }
         }
     }
     .content{
         flex: 0.65;
+        @include breakpoints-down(small){
+            width: 100%;
+            text-align: center;
+         }
         h3{
             margin-bottom: 20px;
         }

@@ -50,7 +50,7 @@
 
 
     <!-- Dashbroad for user -->
-    <section class="user container flex">
+    <section class="user history-main container flex">
         <div class="nav">
             <!-- 25% -->
             <h4 class="name-user">Chào Huy</h4>
@@ -63,34 +63,30 @@
         </div>
         <div class="content">
             <!-- 75% -->
-            <h3>Thông tin tài khoản</h3>
-            <form action="">
-                <div class="inputBox">
-                    <label for="">Họ tên</label>
-                    <input type="text" name="ten" value="Quang Huy" autocomplete="none">
-                </div>
-                <div class="inputBox">
-                    <label for="">Số điện thoại</label>
-                    <input type="text" name="sdt" value="039268723">
-                </div>
-                <div class="inputBox">
-                    <label for="">Email</label>
-                    <input type="text" name="email" value="Huybest10@gmail.com">
-                </div>
-                <div class="inputBox">
-                    <label for="">Giới tính</label>
-                    <input type="radio" name="gioiTinh"  value="nam" checked >
-                    <label for="nam">Nam</label>
-                    <input type="radio" name="gioiTinh" value="nu">
-                    <label for="nu">Nữ</label>
-                </div>
-                <div class="inputBox">
-                    <label for="">Ngày sinh</label>
-                    <!-- max time = date.now -->
-                    <input type="date" name="ngaySinh" value="2018-07-22" min="1970-01-01" max="2021-03-30">
-                </div>
-                <button type="submit">Cập nhật</button>
-            </form>
+            <h3>Lịch sử mua hàng</h3>
+            <table class="history">
+                <tr>
+                    <th>Mã đơn hàng</th>
+                    <th>Ngày mua</th>
+                    <th>Sản phẩm</th>
+                    <th>Tổng tiền</th>
+                    <th>Trạng thái</th>
+                </tr>
+                <tr>
+                    <td>41251234</td>
+                    <td>19/03/2021</td>
+                    <td>Mochi x10</td>
+                    <td>1.000.000 <sup>đ</sup></td>
+                    <td class="pending">Đang giao</td>
+                </tr>
+                <tr>
+                    <td>41251232</td>
+                    <td>19/03/2021</td>
+                    <td>Mocha x4</td>
+                    <td>2.000.000 <sup>đ</sup></td>
+                    <td class="susscess">Thành công</td>
+                </tr>
+            </table>
         </div>
     </section>
 
