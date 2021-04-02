@@ -1221,10 +1221,26 @@ footer .footer__cp {
   padding-bottom: 20px;
 }
 
+@media (max-width: 39.9375em) {
+  .user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .user .nav {
   -webkit-box-flex: 0.25;
       -ms-flex: 0.25;
           flex: 0.25;
+}
+
+@media (max-width: 39.9375em) {
+  .user .nav {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .user .nav h4 {
@@ -1261,16 +1277,17 @@ footer .footer__cp {
   color: #414141;
 }
 
-@media (max-width: 39.9375em) {
-  .user .nav ul li a {
-    display: none;
-  }
-}
-
 .user .content {
   -webkit-box-flex: 0.65;
       -ms-flex: 0.65;
           flex: 0.65;
+}
+
+@media (max-width: 39.9375em) {
+  .user .content {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .user .content h3 {
@@ -1497,5 +1514,27 @@ footer .footer__cp {
   font-size: 2.25rem;
   background: url("../../img/crossword.png") repeat #5a88ca;
   color: #fff;
+}
+
+.history {
+  width: 100%;
+}
+
+.history tr {
+  border-bottom: 1px solid #6b6b6b;
+}
+
+.history th {
+  color: #444444;
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.history td.susscess {
+  color: green;
+}
+
+.history td.pending {
+  color: blue;
 }
 /*# sourceMappingURL=style.css.map */
