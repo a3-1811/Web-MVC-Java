@@ -50,7 +50,7 @@
 
 
     <!-- Dashbroad for user -->
-    <section class="user history-main container flex">
+    <section class="user container flex">
         <div class="nav">
             <!-- 25% -->
             <h4 class="name-user">Chào Huy</h4>
@@ -65,30 +65,29 @@
         </div>
         <div class="content">
             <!-- 75% -->
-            <h3>Lịch sử mua hàng</h3>
-            <table class="history">
-                <tr>
-                    <th>Mã đơn hàng</th>
-                    <th>Ngày mua</th>
-                    <th>Sản phẩm</th>
-                    <th>Tổng tiền</th>
-                    <th>Trạng thái</th>
-                </tr>
-                <tr>
-                    <td>41251234</td>
-                    <td>19/03/2021</td>
-                    <td>Mochi x10</td>
-                    <td>1.000.000 <sup>đ</sup></td>
-                    <td class="pending">Đang giao</td>
-                </tr>
-                <tr>
-                    <td>41251232</td>
-                    <td>19/03/2021</td>
-                    <td>Mocha x4</td>
-                    <td>2.000.000 <sup>đ</sup></td>
-                    <td class="susscess">Thành công</td>
-                </tr>
-            </table>
+            <h3>Chỉnh sửa sản phẩm</h3>
+            <form class="edit" action="">
+                <div class="inputBox">
+                    <label for="">Tên sản phẩm</label>
+                    <input type="text" name="ten" value="Mochi" autocomplete="none">
+                </div>
+                <div class="inputBox">
+                    <label for="">Mô tả</label>
+                    <input type="text" name="moTa" value="llorsdaasdm">
+                </div>
+                <div class="inputBox">
+                    <label for="">Giá</label>
+                    <input type="number" name="price" value="llorsdaasdm">
+                </div>
+                <div class="inputBox">
+                    <label for="">Hình ảnh:</label>
+                    <input type="file" name="" id="fileUpload" accept="image/png, image/jpeg">
+                </div>
+                <div class="groupBox" >
+                    <img src="./app/img/coffee/mochi.jpg" alt="" id="demo-image">
+                </div>
+                <button type="submit">Cập nhật</button>
+            </form>
         </div>
     </section>
 

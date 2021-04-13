@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./app/dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./app/dist/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./app/dist/css/style.css">
+    <title>Coffee & Cakes Shop</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="flex jc-c ai-c">
+        <nav class="container flex jc-sb ai-c">
+            <a href="/" class="logo">CCS</a>
+            <a id="btnToggle" href="#" class="toggle hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="menu flex jc-sb ai-c hide-for-mobile">
+                <li class="acv"><a href="#">Trang chủ</a></li>
+                <li><a href="list-products.html">Sản phẩm</a></li>
+                <li><a href="#">Tài khoản</a></li>
+                <li class="searchBox"><input placeholder="Bạn đang tìm gì?" name="txtKeyWord" type="text"><button><i class="fa fa-search" aria-hidden="true"></i></button></li>
+            </ul>
+            <div class="status hide-for-mobile">
+                <a href="/login.html" ><i class="fa fa-user-circle" aria-hidden="true"></i>Đăng nhập</a>
+                <a href="#" ><i class="fa fa-sign-out-alt"></i>Đăng xuất</a>
+                <a href="/giohang.html" ><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ hàng<span class="number">0</span></a>
+            </div>
+            <div class="sub-menu hide-for-desktop">
+                <ul class="menu flex jc-sb ai-c">
+                    <li class="acv"><a href="#">Trang chủ</a></li>
+                    <li><a href="list-products.html">Sản phẩm</a></li>
+                    <li><a href="#">Tài khoản</a></li>
+                    <li class="searchBox"><input placeholder="Bạn đang tìm gì?" name="txtKeyWord" type="text"><button><i class="fa fa-search" aria-hidden="true"></i></button></li>
+                </ul>
+                <div class="status">
+                    <a href="/login.html" ><i class="fa fa-user-circle" aria-hidden="true"></i>Đăng nhập</a>
+                    <a href="#" ><i class="fa fa-sign-out-alt"></i>Đăng xuất</a>
+                    <a href="/giohang.html" ><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ hàng <span class="number">0</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Dashbroad for user -->
+    <section class="admin container flex">
+        <div class="nav">
+            <!-- 25% -->
+            <h4 class="name-user">Chào Huy </h4>
+            <ul>
+                <li><i class="fa fa-user-circle" aria-hidden="true"></i><a href="#">Thông tin tài khoản</a></li>
+                <li><i class="fa fa-history"></i><a href="">Lịch sử mua hàng</a></li>
+                <li><i class="fa fa-cart-arrow-down" aria-hidden="true"></i><a href="giohang.html">Giỏ hàng</a></li>
+                <li><i class="fa fa-key"></i><a href="/user-doimk.html">Đổi mật khẩu</a></li>
+                <li><i class="fa fa-users-cog"></i><a href="/">Quản lý người dùng</a></li>
+                <li><i class="fab fa-product-hunt"></i><a href="/manager-products.html">Quản lý sản phẩm</a></li>
+            </ul>
+        </div>
+        <div class="content" style="overflow-y: scroll;">
+            <!-- 75% -->
+            <div class="nav-menu">
+                <h3>Quản lý sản phẩm</h3>
+                <form action="./manager-products.html" class="searchBox">
+                    <input type="text" id="searchProducts" name="txtSearch">
+                    <button type="submit">Tìm</button>
+                </form>
+                <a  class="delete" href=""><i class="fa fa-trash"></i>Delete</a>
+                <a href="#" id="openModal"><i class="fa fa-plus-circle"></i>Add</a>
+            </div>
+            <table >
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" name="id" id="checkAll"></th>
+                        <th>ID</th>
+                        <th>Tên SP</th>
+                        <th>Hình ảnh</th>
+                        <th>Đơn giá</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr><tr>
+                            <td><input type="checkbox" name="id" value="1"></td>
+                            <td>1</td>
+                            <td>Mochi</td>
+                            <td>
+                                <div class="imgBox">
+                                    <img src="./app/img/coffee/mochi.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>100.000 <sup>đ</sup></td>
+                            <td>
+                               <div class="iconBox">
+                                <a href="delete?id=1"><i class="fa fa-trash"></i></a>
+                                <a href="edit?id=1"><i class="check fa fa-wrench"></i></a>
+                               </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </div>
+            </table>
+        </div>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal__header flex jc-sb ai-c">
+            <h2>Add products</h2>
+            <a  class="exit" href="#"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="modal__body">
+            <form action="">
+                <div class="groupBox">
+                    <label for="">Tên sản phẩm:</label>
+                    <input type="text" >
+                </div>
+                <div class="groupBox">
+                    <label for="">Giá sản phẩm:</label>
+                    <input type="text" >
+                </div>
+                <div class="groupBox">
+                    <label for="">Danh mục:</label>
+                    <select name="" id="">
+                        <option value="">Bánh kem</option>
+                        <option value="">Bánh ngọt</option>
+                        <option value="">Coffee</option>
+                        <option value="">Quà</option>
+                    </select>
+                </div>
+                <div class="groupBox">
+                    <label for="">Hình ảnh:</label>
+                    <input type="file" name="" id="fileUpload" accept="image/png, image/jpeg">
+                </div>
+                <div class="groupBox" >
+                    <img src="./app/img/coffee/capuccino.jpg" alt="" id="demo-image">
+                </div>
+            </form>
+        </div>
+        <div class="modal__footer">
+                <a href="#" id="openModal"><i class="fa fa-plus-circle"></i>Add</a>
+        </div>
+    </div>
+
+    <footer class="mt-5 flex jc-sa ai-c">
+        <div class="footer__main container flex jc-sa ">
+            <div class="col">
+                <h2>Liên hệ</h2>
+                <ul>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> (+84) 0392680723</li>
+                    <li><i class="fab fa-github"></i>abe18-11</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>huybest10@gmail.com</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Thời gian mở cửa</h2>
+                <ul>
+                    <li><i class="fa fa-check"></i>Monday - Saturday ( 7am - 9pm )</li>
+                    <li><i class="fa fa-check"></i>Sunday (7am - 1pm)</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Địa chỉ</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1250520425215!2d106.71230301397601!3d10.801733161681753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528a459cb43ab%3A0x6c3d29d370b52a7e!2sHutech%20University!5e0!3m2!1sen!2s!4v1616234485593!5m2!1sen!2s" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <p class="footer__cp">
+            © Copyright 2021 CCS. All rights reserved.
+        </p>
+    </footer>
+    <script src="./app/js/app.js"></script>
+</body>
+</html>
