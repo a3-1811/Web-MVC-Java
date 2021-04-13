@@ -11,6 +11,7 @@
     width: 500px;
     padding: 1rem;
     transition: all 0.4s;
+    overflow-y: scroll;
     &.isOpen{
         display: block;
         opacity: 1;
@@ -36,7 +37,7 @@
         .groupBox{
             width: 100%;
             margin-top: 20px;
-            input,select{
+            input,select,textarea{
                 width: 100%;
                 display: block;
                 padding: 10px;
@@ -76,4 +77,12 @@ form.edit{
         width: 100px;
         margin: 20px auto;
     }
+    .inputBox select, textarea{
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
+}
+textarea{
+    resize: none;
 }
