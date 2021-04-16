@@ -1647,11 +1647,18 @@ footer .footer__cp {
   font-size: 1.125rem;
 }
 
-.admin .content form .inputBox input {
+.admin .content form .inputBox input, .admin .content form .inputBox textarea {
   padding: 12px 25px;
   outline: none;
   border: #6b6b6b;
   width: 100%;
+}
+
+.admin .content form .inputBox input[type="radio"] {
+  -webkit-box-flex: 0.1;
+      -ms-flex: 0.1;
+          flex: 0.1;
+  cursor: pointer;
 }
 
 .admin .content form button {

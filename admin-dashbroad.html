@@ -11,18 +11,46 @@
     <title>Coffee & Cakes Shop</title>
 </head>
 <body>
-    <section class="content">
-        <section class="login-header flex jc-c ai-c">
-            <nav class="container flex jc-sb ai-c">
-                <a href="/" class="logo">CCS</a>
-                <a href=""></i>Chào Huy</a>
-            </nav>
-        </section>
-    </section>
+      <!-- Header -->
+      <header class="flex jc-c ai-c">
+        <nav class="container flex jc-sb ai-c">
+            <a href="index.html" class="logo">CCS</a>
+            <a id="btnToggle" href="#" class="toggle hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="menu flex jc-sb ai-c hide-for-mobile">
+                <li class="acv"><a href="index.html">Trang chủ</a></li>
+                <li><a href="list-products.html">Sản phẩm</a></li>
+                <li><a href="user-dashbroad.html">Tài khoản</a></li>
+                <li class="searchBox"><input placeholder="Bạn đang tìm gì?" name="txtKeyWord" type="text"><button><i class="fa fa-search" aria-hidden="true"></i></button></li>
+            </ul>
+            <div class="status hide-for-mobile">
+                <a href="/login.html" ><i class="fa fa-user-circle" aria-hidden="true"></i>Đăng nhập</a>
+                <a href="/login.html" ><i class="fa fa-sign-out-alt"></i>Đăng xuất</a>
+                <a href="/giohang.html" ><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ hàng<span class="number">0</span></a>
+            </div>
+            <div class="sub-menu hide-for-desktop">
+                <ul class="menu flex jc-sb ai-c">
+                    <li class="acv"><a href="#">Trang chủ</a></li>
+                    <li><a href="list-products.html">Sản phẩm</a></li>
+                    <li><a href="user-dashbroad.html">Tài khoản</a></li>
+                    <li class="searchBox"><input placeholder="Bạn đang tìm gì?" name="txtKeyWord" type="text"><button><i class="fa fa-search" aria-hidden="true"></i></button></li>
+                </ul>
+                <div class="status">
+                    <a href="./login.html" ><i class="fa fa-user-circle" aria-hidden="true"></i>Đăng nhập</a>
+                    <a href="./login.html" ><i class="fa fa-sign-out-alt"></i>Đăng xuất</a>
+                    <a href="./giohang.html" ><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ hàng <span class="number">0</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- Dashbroad for user -->
     <section class="admin container flex">
         <div class="nav">
             <!-- 25% -->
+            <h4 class="name-user">Chao Huy</h4>
             <ul>
                 <li><i class="fa fa-user-circle" aria-hidden="true"></i><a href="#">Thông tin tài khoản</a></li>
                 <li><i class="fa fa-history"></i><a href="">Lịch sử mua hàng</a></li>
@@ -54,6 +82,10 @@
                     <label for="nam">Nam</label>
                     <input type="radio" name="gioiTinh" value="nu">
                     <label for="nu">Nữ</label>
+                </div>
+                <div class="inputBox">
+                    <label for="">dia chi</label>
+                    <textarea name="moTa"  cols="10" rows="3" >asdsadsa</textarea>
                 </div>
                 <div class="inputBox">
                     <label for="">Ngày sinh</label>

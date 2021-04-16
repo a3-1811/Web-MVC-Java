@@ -65,12 +65,16 @@
           min-width: 110px;
           font-size: $fs-sm;
         }
-        input {
+        input , textarea{
           padding: 12px 25px;
           outline: none;
           border: $cl-gray;
           width: 100%;
         }
+        input[type="radio"] {
+          flex: 0.1;
+          cursor: pointer;
+      }
       }
       button {
         margin-top: 20px;
