@@ -71,6 +71,10 @@
                     border: $cl-gray;
                     width: 100%;
                 }
+                input[type="radio"] {
+                    flex: 0.1;
+                    cursor: pointer;
+                }
             }
             button{
                 margin-top: 20px;
